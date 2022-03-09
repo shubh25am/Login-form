@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="loginSignIn">
+      <h1>Log In to Your Account</h1>
+      <form id="form" method="POST" action="/login">
+        <label>
+          <span>Enter your email:</span><br>
+          <input name="email" type="email" id="email" placeholder="Type your email" required/>
+        </label><br>
+        <label>
+          <span>Password:</span><br>
+          <input name="password" type="password" id="password" placeholder="Type your password" required/>
+        </label>
+        <input type="button" value="Login" id="login" />
+        <a href="/public/sign.html" id="account">Create New Account</a><br>
+        <span id="error"></span>
+      </form>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>

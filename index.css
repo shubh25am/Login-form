@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .loginSignIn{
+    box-shadow: 2px 4px 8px 4px gainsboro;
+    margin: 7rem auto;
+    padding: 20px;
+    width: 600px;
+  }
+  .sign{ margin: 4.5rem auto; }
+  .loginSignIn h1{ text-align: center; color: orangered; }
+  .loginSignIn form{
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
+  .loginSignIn input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+  }
+  .loginSignIn #login, .loginSignIn #signin{
+    outline: none;
+    background-color: orangered;
+    color: white;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    margin: auto 40%;
+  }
+  .loginSignIn #login:hover, .loginSignIn #signin:hover{ background-color: rgb(255,40,0);}
+  .loginSignIn #error{
+    font-size: 20px;
+    margin-top: 20px;
+    color: forestgreen;
+  }
+  .loginSignIn a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+  }
+  .loginSignIn a:hover{ text-decoration: underline; }

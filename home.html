@@ -1,0 +1,30 @@
+<h1 id="name">Hello</h1>
+<a href="login.html" id="btn">My Account</button>
+
+<style>
+  #btn{
+    color: orangered;
+    font-size: 15px;
+    text-decoration: none;
+  }
+</style>
+
+<script>
+    var link = document.getElementById( "btn" );
+    var h1 = document.getElementById( "name" );
+
+    function makeRequest(){
+        var request = new XMLHttpRequest();
+        request.open( "GET" , "/getUse" );
+        request.send();
+        request.addEventListener( 'load', () => {
+          if( request.status === 200 ){
+             var data = request.responseText ? JSON.parse( request.responseText ) : null;
+             link.innerText = data ? "Logout" : "My Account";
+             h1.innerText = data ? "Hi " + data : "Hello";
+          }
+       })
+    }
+
+    makeRequest();
+</script>
